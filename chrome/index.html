@@ -7,11 +7,10 @@
     <title>HoverSite</title>
     <link rel="stylesheet" href="styles.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
-    <script src="scripts/popup.js"></script>
 </head>
 
 <body>
-    <div style="width: 430px; height: 600px;" id="pageSummary">
+    <div style="width: 430px; height: 600px;">
         <div class="chat-box">
             <div class="chat-box-header">
                 <h3>HoverSite Bot</h3>
@@ -27,20 +26,13 @@
             </div>
             <div class="chat-box-footer">
                 <input placeholder="Ask a question" type="text" id="userMessage" autofocus />
-                <i class="send far fa-paper-plane"></i>
-            </div>
-        </div>
-        <div class="chat-button"><span></span></div>
-        <div class="modal">
-            <div class="modal-content">
-                <span class="modal-close-button">&times;</span>
-                <h1>Add What you want here.</h1>
+                <i class="send far fa-paper-plane" id="sendMessageBtn"></i>
             </div>
         </div>
     </div>
-    <script src='scripts/jquery.min.js'></script>
-    <!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js -->
-    <script src='scripts/chatbotScript.js'></script>
+    <script src="scripts/browserSpecific.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/openai.js"></script>
 </body>
 
 </html>

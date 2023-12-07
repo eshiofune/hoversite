@@ -51,18 +51,6 @@ body {
     left: 25px;
 }
 
-.chat-box-header p {
-    float: right;
-    position: absolute;
-    right: 16px;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    line-height: 3.25;
-    margin: 0;
-}
-
 .chat-box-body {
     height: 75%;
     background: rgb(255, 253, 255);
@@ -163,90 +151,4 @@ body {
     justify-content: center;
     transform: translate(0px, 20px);
     cursor: pointer;
-}
-
-.chat-button {
-    padding: 25px 16px;
-    background: #2C50EF;
-    width: 120px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 15px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    box-shadow: 0 2px 15px rgba(44, 80, 239, 0.21);
-    cursor: pointer;
-}
-
-.chat-button span::before {
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #47cf73;
-    position: absolute;
-    transform: translate(0, -7px);
-    border-radius: 15px;
-}
-
-.chat-button span::after {
-    content: "Message Us";
-    font-size: 14px;
-    color: white;
-    position: absolute;
-    left: 50px;
-    top: 18px;
-}
-
-.modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1rem 1.5rem;
-    width: 24rem;
-    border-radius: 0.5rem;
-}
-
-.modal-close-button {
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-}
-
-.close-button:hover {
-    background-color: darkgray;
-}
-
-.show-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    z-index: 30;
-}
-
-@media screen only and (max-width: 450px) {
-    .chat-box {
-        min-width: 100% !important;
-    }
 }

@@ -21,3 +21,7 @@ After cloning this repo to your computer:
 1. Click the "Load unpacked" button and select the Chrome extension folder (hoversite/chrome).
 
 1. Go to Extensions in the browser and select HoverSite to start using it!
+
+## Firefox
+
+Unfortunately, based on my research, Firefox does not currently allow extensions to load URLs and as such, this extension would not be able to request data from the OpenAI API. I am happy to be proven wrong though, so feel free to fork this repo and shoot a PR if you're able to get the openai.js functions working.

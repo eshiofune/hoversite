@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "HoverSite",
+  "version": "1.0",
+  "description": "Summarise and answer questions about the webpage you're on.",
+  "icons": {
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "images/icon-128.png"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "permissions": [
+    "webNavigation",
+    "scripting",
+    "activeTab",
+    "tabs"
+  ]
+}

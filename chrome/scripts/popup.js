@@ -19,9 +19,11 @@ function getMessagesFromStorage() {
     return JSON.parse(localStorage.getItem("queue"));
 }
 
-function getBodyText() {
-    let tags = document.getElementsByTagName("body");
-    return tags[0].innerText;
+function getBodyText(useOnlyText = true) {
+    // if useOnlyText is true, only send the text on this page to the LLM. otherwise, send the entire HTML source code.
+    const tags = document.getElementsByTagName("html");
+    // what html code is used for the "Generate" button?
+    return useOnlyText ? tags[0].innerText : tags[0].innerHTML;
 }
 
 function sendMessage(message, divClass) {

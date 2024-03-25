@@ -1,6 +1,6 @@
-const SYSTEM_PROMPT = ""; // e.g. "summarize the webpage provided..."
+const SYSTEM_PROMPT = ""; // e.g. "You are a browser extension used to analyse websites and extract information quickly for users. You must be helpful to the user, telling them when information isn't available on the web page or that they might find better information on a different web page linked to this one. Take a look at the following website:"
 const OPENAI_TOKEN = ""; // e.g. "sk-xx..."
-const OPENAI_MODEL = ""; // e.g. "gpt-4"
+const OPENAI_MODEL = ""; // e.g. "gpt-3.5-turbo-16k"
 const COMPLETIONS_ENDPOINT = "https://api.openai.com/v1/chat/completions";
 
 async function postData(url = "", data = {}) {
